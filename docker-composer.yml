@@ -1,0 +1,8 @@
+version: '1.0'
+services:
+ php:
+  image: php:apache-bullseye
+  ports:
+    - 8082:80
+  volumes:
+    - ./src:/var/www/html
